@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - function to print abc
+ * print_alphabet - this function would print out abc
  *
  * Return: 0
  */
