@@ -2,11 +2,9 @@
 #include <string.h>
 
 /**
- * print_rev - string in reve
- * @s: string
- * Return: void
+ * print_rev - string in reverse order
+ * @s: pointer to string
  */
-
 void print_rev(char *s)
 {
 	int i, len;
