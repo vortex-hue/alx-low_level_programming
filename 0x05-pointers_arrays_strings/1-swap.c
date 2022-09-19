@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * swap_int - swap values of two nums
@@ -11,7 +10,6 @@
 void swap_int(int *a, int *b)
 {
     int constant = *a;
-    
     *a = *b;
     *b = constant;
 }
