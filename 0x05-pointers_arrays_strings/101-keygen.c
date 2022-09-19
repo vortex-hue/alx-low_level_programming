@@ -2,11 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/**main - generates random password
-* Return - 0 
-*/
- 
+/**
+ */
 int main(void)
 {
 int num;
