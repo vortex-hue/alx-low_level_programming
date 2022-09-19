@@ -6,10 +6,9 @@
  *@a : Second pointer
  * Return: void or nothing
  */
-
 void swap_int(int *a, int *b)
 {
-    int constant = *a;
+    int cst = *a;
     *a = *b;
-    *b = constant;
+    *b = cst;
 }
