@@ -4,7 +4,9 @@
 /**
  * print_rev - string in reve
  * @s: string
+ * Return: void
  */
+
 void print_rev(char *s)
 {
 	int i, len;
