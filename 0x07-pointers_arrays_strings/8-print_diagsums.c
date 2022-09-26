@@ -6,6 +6,7 @@
  * @a: a pointer
  * @size: size
  */
+
 void print_diagsums(int *a, int size)
 {
 	int i, sum1 = 0, sum2 = 0;
