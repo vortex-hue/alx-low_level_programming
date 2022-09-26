@@ -52,9 +52,38 @@ The goal here is to make sure you understand how an array of array is stored in 
 Prototype: void set_string(char **s, char *to);
 
 9. Create a file that contains the password for the crackme2 executable.
+ My primary goal of hacking was the intellectual curiosity, the seduction of adventure
+101-crackme_password - a file that contains the password for the crackme2 executable.
 
-Your file should contain the exact password, no new line, no extra space
-ltrace, ldd, gdb and objdump can help
-You may need to install the openssl library to run the crakme2 program: sudo apt install libssl-dev
-Edit the source list sudo nano /etc/apt/sources.
-list to add the following line: deb http://security.ubuntu.com/ubuntu xenial-security main Then sudo apt update and sudo apt install libssl1.0.0
+Steps to Get the Password
+a. Clone the file - crackme2
+b. Install openssl,
+Type the command: sudo apt install libssl-dev
+c. Edit the source list
+Type the command: sudo nano /etc/apt/sources.list
+Add this to the file: deb http://security.ubuntu.com/ubuntu xenial-security main
+Exit nano
+Type the command: sudo apt update
+Type the command: sudo apt install libssl1.0.0
+d. In the 0x06.c directory
+First run the file: $ ./crackme2
+Note the response
+e. Test the file type
+Do: $ file crackme2
+Note the response
+f. Do ltrace on your terminal
+Do: $ ltrace ./crackme2
+Note the last strings like this: strncmp("_=/usr/bin/ltrace", "jennieandjayloveasm=", 20) = -11
+Copy this string: jennieandjayloveasm
+g. Do this next on your terminal
+$ export jennieandjayloveasm=hey
+ltrace ./crackme2
+Note the response: strcmp("d8578edf8458ce06fbc5bb76a58c5ca4"…, "6057f13c496ecf7fd777ceb9e79ae285"…) = 46
+Copy the md5 hash: d8578edf8458ce06fbc5bb76a58c5ca4
+h. Go to this website to convert the md5 hash to string: md5 site
+the result is the abc123.
+i. Now enter the following command your terminal
+echo -n 'abc123' > 101-crackme_password
+chmod u+x 101-crackme_password
+j. Push to your github
+
