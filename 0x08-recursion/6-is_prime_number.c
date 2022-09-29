@@ -3,7 +3,8 @@
 int tmp_prime(int n, int i);
 
 /**
- * divisors - number is prime?  a function that returns 1 if the input integer is a prime number, otherwise return 0.
+ * divisors - number is prime?  a function that returns 1
+ * if the input integer is a prime number, otherwise return 0.
  * @n: integer params
  * @m: integer params
  * Return: boolean
