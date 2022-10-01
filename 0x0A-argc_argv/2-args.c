@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - a program that prints all 
  * arguments it receives.
@@ -7,7 +6,6 @@
  * @argv: array that contains the program command line arguments.
  * Return: 0 - success.
  */
-
 int main(int argc, char *argv[])
 {
 	int i;
