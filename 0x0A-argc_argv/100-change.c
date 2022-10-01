@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
+
 /**
  * main - a program that prints
  * the minimum number of coins
