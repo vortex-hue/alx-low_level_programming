@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - a program that prints
  * the minimum number of coins
@@ -9,8 +8,6 @@
  * @argv: array that contains the program command line arguments.
  * Return: 0 - success.
  */
-
-
 int main(int argc, char *argv[])
 {
 	int cents, ncoins = 0;
