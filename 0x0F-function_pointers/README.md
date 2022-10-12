@@ -31,4 +31,4 @@
   </ul>
   </br>
   <h2> Learning Objectives </h2>
-<p> At the end of this project, you are expected to be able to </a href="https://alx-intranet.hbtn.io/rltoken/ITYG4BLMI4_5Unpdwue2tw"> explain to anyone</a>, without the help of Google </p>
+<p> At the end of this project, you are expected to be able to <a href="https://alx-intranet.hbtn.io/rltoken/ITYG4BLMI4_5Unpdwue2tw"> explain to anyone</a>, without the help of Google </p>
